@@ -1,10 +1,10 @@
 # EBAS Submissions
 
-Tools and templates for creating EBAS-compatible NASA Ames data files for the LNM atmospheric monitoring site.
+Python tools for building EBAS-compatible NASA Ames data files, used to submit atmospheric monitoring data to [EBAS](https://ebas.nilu.no/), the international database run by NILU for long-term atmospheric composition records.
 
 ## Overview
 
-This project provides Python scripts to generate NASA Ames 1001 format files for submission to [EBAS](https://ebas.nilu.no/) (European Monitoring and Evaluation Programme database).
+EBAS requires data in NASA Ames 1001 format with detailed, strictly validated metadata headers. Writing these by hand is slow and error-prone. These scripts generate complete, submission-ready files from measurement data and station metadata using NILU's `ebas-io` library. Templates are included for radioactivity (gamma spectrometer) and methane (cavity ring-down spectrometer) measurements at the LNM site, and the station, instrument, and component settings can be changed for other sites and measurements (see [Customization](#customization)).
 
 ## Setup
 
